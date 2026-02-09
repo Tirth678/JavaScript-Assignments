@@ -20,8 +20,17 @@
   Once you've implemented the logic, test your code by running
   - `npm run test-compressString`
 */
-function compression(str) {
-  // Your code here
+const compression = (str) => {
+    let = totlacounts = {};
+    for(let i=0; i<str.length; i++){
+        const doSomething = str[i];
+        if(totlacounts[doSomething]){
+            totlacounts += doSomething;
+        }
+        else{
+            totlacounts[doSomething] = doSomething;
+        }
+    }
 }
 
 module.exports = compression;
